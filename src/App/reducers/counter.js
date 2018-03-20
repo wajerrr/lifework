@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-fetch';
+
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 
@@ -31,14 +32,14 @@ export function requestData() {
       });
     };
   }
-  
+  export const initialState = {balance: 0, name: 'test'};
 
-export default (state = {balance: 0, name: 'test'}, action) =>  {
+export default (state = initialState, action = {}) =>  {
     switch (action.type) {
       case INCREMENT:
-        return  { name: state.name, balance: ++state.balance}
+        return  { name: state.name, balance: state.balance + 1}
       case DECREMENT:
-        return {name: state.name, balance: --state.balance }
+        return {name: state.name, balance: state.balance - 1}
         case RECIEVED_DATA: 
         return action.data
       default:
