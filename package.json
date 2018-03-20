@@ -1,5 +1,5 @@
 {
-  "name": "liveworktest",
+  "name": "lifework-test",
   "version": "1.0.0",
   "description": "redux react test",
   "main": "src/index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wajerrr/liveworktest.git"
+    "url": "git+https://github.com/wajerrr/lifework.git"
   },
   "author": "P W",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wajerrr/liveworktest/issues"
+    "url": "https://github.com/wajerrr/lifework/issues"
   },
-  "homepage": "https://github.com/wajerrr/liveworktest#readme",
+  "homepage": "https://github.com/wajerrr/lifework#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
