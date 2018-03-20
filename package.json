@@ -1,0 +1,19 @@
+{
+  "name": "liveworktest",
+  "version": "1.0.0",
+  "description": "redux react test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wajerrr/liveworktest.git"
+  },
+  "author": "P W",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wajerrr/liveworktest/issues"
+  },
+  "homepage": "https://github.com/wajerrr/liveworktest#readme"
+}
