@@ -7,10 +7,7 @@ module: {
     { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader" }
   ]
 },
-output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'foo.bundle.js'
-  },
+  mode: 'development',
   plugins: [
     new HtmlWebpackPlugin({template: './src/index.html'})
   ]
