@@ -4,7 +4,7 @@ import App from './App.jsx';
 import {incrementValue, decrementValue} from './reducers/counter';
 
 const mapStateToProps = (state) => ({
-    value: state.value,
+    balance: state.balance,
     name: state.name
 });
 

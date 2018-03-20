@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {createStore, applyMiddleware} from 'redux';
+import thunk from 'redux-thunk';
+
 import App from './App/App.container.jsx';
-import counter from './App/reducers/counter';
-import {createStore} from 'redux';
-const store = createStore(counter);
+import counter, {getData} from './App/reducers/counter';
+
+const store = createStore(counter, applyMiddleware(thunk));
+store.dispatch(getData());
+
 ReactDOM.render(
  <App store={store}/>,
   document.getElementById('root')
